@@ -19,6 +19,7 @@ git clone https://git.epam.com/azizbek_samatov/reactgmp-netflix-roulette.git
 ##### Install and run:
 
 ```bash
+cd [project_name]
 npm install
 npm run start
 ```
