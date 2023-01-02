@@ -3,9 +3,10 @@ import "./TodoList.scss";
 
 const TodoList = () => {
   return (
-    <div>
-      <h1 className="todo-list">TodoList</h1>
-    </div>
+    <header className="header">
+      <h1 className="main-title">Todo List App</h1>
+      <button className="btn btn-primary">Create todo</button>
+    </header>
   );
 };
 
