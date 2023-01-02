@@ -3,8 +3,8 @@ import "./TodoList.scss";
 
 const TodoList = () => {
   return (
-    <div className="todo-list">
-      <h1>TodoList</h1>
+    <div>
+      <h1 className="todo-list">TodoList</h1>
     </div>
   );
 };
