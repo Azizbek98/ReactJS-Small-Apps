@@ -12,7 +12,7 @@ const TodoList = () => {
     <header className="header">
       <h1 className="main-title">Todo List</h1>
       <button className="btn btn-primary" onClick={toggle}>
-        Create todo
+        Create task
       </button>
       <ModalForm modal={modal} toggle={toggle} />
     </header>
