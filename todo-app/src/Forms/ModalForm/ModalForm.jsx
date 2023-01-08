@@ -9,17 +9,22 @@ const ModalForm = ({ modal, toggle }) => {
       <ModalBody>
         <Form>
           <FormGroup>
-            <Label for="exampleEmail">Email</Label>
+            <Label for="task-title">Email</Label>
             <Input
-              id="exampleEmail"
-              name="email"
-              placeholder="with a placeholder"
-              type="email"
+              id="task-title"
+              name="title"
+              placeholder="Enter task title here"
+              type="text"
             />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleText">Text Area</Label>
-            <Input id="exampleText" name="text" type="textarea" />
+            <Label for="task-description">Text Area</Label>
+            <Input
+              id="task-description"
+              name="text"
+              type="textarea"
+              placeholder="Enter task description here"
+            />
           </FormGroup>
         </Form>
       </ModalBody>
