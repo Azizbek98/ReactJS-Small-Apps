@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import ModalForm from "../../Forms/ModalForm/ModalForm";
+
 import "./TodoList.scss";
 
 const TodoList = () => {
@@ -13,22 +14,7 @@ const TodoList = () => {
       <button className="btn btn-primary" onClick={toggle}>
         Create todo
       </button>
-      <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
-        <ModalBody>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi incidunt
-          nobis fugiat, assumenda perspiciatis dignissimos repudiandae iusto
-          quos corrupti provident.
-        </ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggle}>
-            OK
-          </Button>{" "}
-          <Button color="secondary" onClick={toggle}>
-            Cancel
-          </Button>
-        </ModalFooter>
-      </Modal>
+      <ModalForm modal={modal} toggle={toggle} />
     </header>
   );
 };
