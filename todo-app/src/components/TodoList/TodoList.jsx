@@ -3,7 +3,7 @@ import ModalForm from "../../Forms/ModalForm/ModalForm";
 
 import "./TodoList.scss";
 
-const TodoList = () => {
+const TodoList = ({ task }) => {
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
@@ -14,7 +14,7 @@ const TodoList = () => {
       <button className="btn btn-primary" onClick={toggle}>
         Create task
       </button>
-      <ModalForm modal={modal} toggle={toggle} />
+      <ModalForm modal={modal} toggle={toggle} task={task} />
     </header>
   );
 };
