@@ -42,7 +42,7 @@ const ModalForm = ({ modal, toggle, task }) => {
         </Form>
       </ModalBody>
       <ModalFooter>
-        <Button color="success" onClick={toggle}>
+        <Button color="success" onClick={createTask}>
           Create
         </Button>
         <Button color="danger" onClick={toggle}>

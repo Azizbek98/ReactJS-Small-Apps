@@ -8,9 +8,7 @@ const TodoContainer = ({ task }) => {
       <h2 className="text-center">Todo Container</h2>
       <ul>
         {task.map((item) => (
-          <li key={item}>
-            <strong>{item.title}</strong> - <span>{item.description}</span>
-          </li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </section>
