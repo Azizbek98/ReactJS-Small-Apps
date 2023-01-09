@@ -6,9 +6,9 @@ const ModalForm = ({ modal, toggle, task }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
-  // const createTask = () => {
-  //   task.push({ title, description });
-  // };
+  const createTask = () => {
+    task.push({ title, description });
+  };
 
   return (
     <Modal isOpen={modal} toggle={toggle} centered>
